@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>获取数据</button>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        const getData = () => {
+            return new Promise((resolve, reject) => {
+                $.ajax({
+                    type: 'post',
+                    url: 'http://localhost:3456/settimg',
+                    success: (data) => {
+                        resolve(data);
+                    },
+                    error(err) {
+                        reject(err);
+                    }
+                });
+            });
+        }
+        $('button').click(async () => {
+            let data = await getData();
+            console.log(data);
+        })
+    </script>
+</body>
+
+</html>

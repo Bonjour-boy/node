@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "merge-descriptors": "^1.0.1"
+  },
+  "dependencies": {
+    "merge-descriptors": "^1.0.1"
+  }
+}

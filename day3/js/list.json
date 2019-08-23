@@ -1,0 +1,24 @@
+ {
+     "data": [{
+         "name": "华为",
+         "price": 8888
+     }, {
+         "name": "小米",
+         "price": 8888
+     }, {
+         "name": "oppo",
+         "price": 2888
+     }, {
+         "name": "vivo",
+         "price": 1888
+     }, {
+         "name": "诺基亚",
+         "price": 1999
+     }, {
+         "name": "努比亚",
+         "price": 2888
+     }, {
+         "name": "三星",
+         "price": 4888
+     }]
+ }
